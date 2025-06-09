@@ -1,0 +1,219 @@
+/* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e8f5e9;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER e Navegação */
+header {
+  background: #1b5e20;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #81c784;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #81c784;
+  margin: 10px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
+
+.nav a.active,
+.nav a[href="solucao.html"] {
+  background: #81c784;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.titulo-sessao {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #33691e;
+}
+
+.instrucao {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #2c6b34;
+}
+
+/* Fluxograma */
+.fluxograma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.step {
+  background-color: #ffffff;
+  border-left: 6px solid #1e7c44;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  opacity: 0.4;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.step.active {
+  opacity: 1;
+  transform: scale(1);
+  border-left: 6px solid #66bb6a;
+  background-color: #ffffff;
+}
+
+.step h3 {
+  font-size: 22px;
+  color: #145A32;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 17px;
+  color: #333;
+}
+
+/* Setas */
+.arrow {
+  font-size: 48px;
+  color: #1e7c44;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Botão Reiniciar */
+.reiniciar-container {
+  margin-top: 30px;
+}
+
+#restart {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #1e7c44;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#restart:hover {
+  background-color: #145A32;
+}
+
+/* Rodapé */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .painel {
+    margin: 10px;
+    font-size: 0.95rem;
+  }
+
+  .topo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .painel {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .painel {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .painel {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .painel {
+    font-size: 1.2rem;
+  }
+}
