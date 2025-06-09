@@ -1,0 +1,196 @@
+/* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e8f5e9;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER e Navegação */
+header {
+  background: #1b5e20;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #81c784;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #81c784;
+  margin: 10px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
+
+.nav a.active,
+.nav a[href="index.html"] {
+  background: #81c784;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Backgroud nomeado para HERO */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+              url(Background-EcoAlerta.jpeg) no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background: #43a047;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  background: #66bb6a;
+}
+
+/* Cards de conteúdo */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: #ffffff;
+}
+
+.card {
+  background: #f1f8e9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1b5e20;
+}
+
+.card p, .card li {
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+/* Footer */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .painel {
+    margin: 10px;
+    font-size: 0.95rem;
+  }
+
+  .topo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .painel {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .painel {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .painel {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .painel {
+    font-size: 1.2rem;
+  }
+}

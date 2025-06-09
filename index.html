@@ -4,11 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoAlerta - Início</title>
+  <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, quaerat?
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla qui placeat dolorum doloremque ipsa sit ullam molestias harum doloribus quos aspernatur dolor, laudantium, hic architecto magni? Dolorem molestias rem accusamus pariatur reprehenderit tenetur odit molestiae aspernatur, quos suscipit nemo porro deserunt aliquam explicabo voluptatum qui accusantium voluptate commodi dolores. Accusamus, nostrum perspiciatis. Dolorum officia laboriosam magni fugit hic, voluptates expedita, a voluptatem enim odit eligendi fugiat. Ipsum praesentium, similique rerum veritatis dolorem, aspernatur error ea, harum recusandae libero magnam facere? Dolores perspiciatis blanditiis eos similique, veritatis quia ipsa quam beatae, harum hic et incidunt aut quis animi. Blanditiis, facilis quod.
-    </p>
-    
+  
+  <header>
+    <div class="container">
+      <div class="top-bar">
+        <h1 class="logo">🌱 EcoAlerta</h1>
+        <div class="divider"></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html" class="menu-link">Início</a></li>
+            <li><a href="integrantes.html" class="menu-link">Integrantes</a></li>
+            <li><a href="faq.html" class="menu-link">FAQ</a></li>
+            <li><a href="contato.html" class="menu-link">Contato</a></li>
+            <li><a href="solucao.html" class="menu-link">Solução</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Transformando Emergências em Ações</h2>
+        <p>Notificações que salvam vidas através de SMS, Email e Telegram em um só sistema inteligente.</p>
+        <button onclick="scrollToSection('sobre')">Descubra Como</button>
+      </div>
+    </section>
+
+    <section id="sobre" class="info-cards">
+      <div class="card">
+        <h3>🌍 O Projeto</h3>
+        <p>EcoAlerta é uma solução em Java que visa mitigar desastres ambientais e sociais através do envio automático de alertas personalizados.</p>
+      </div>
+      <div class="card">
+        <h3>💡 A Solução</h3>
+        <p>Com APIs integradas, nossa aplicação detecta cenários críticos e dispara mensagens com orientações, prevenindo perdas e promovendo consciência.</p>
+      </div>
+      <div class="card">
+        <h3>🔧 Funcionalidades</h3>
+        <ul>
+          <li>Notificações por SMS, Email e Telegram.</li>
+          <li>Templates inteligentes para cada tipo de incidente.</li>
+          <li>Responsivo e acessível.</li>
+          <li>Interface moderna e intuitiva.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EcoAlerta. Projeto desenvolvido para a disciplina Global Solution.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
