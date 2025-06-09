@@ -1,0 +1,164 @@
+/* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #e8f5e9;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER e Navegação */
+header {
+  background: #1b5e20;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #81c784;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #81c784;
+  margin: 10px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
+
+.nav a.active,
+.nav a[href="faq.html"] {
+  background: #81c784;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+.faq-content {
+  padding: 3rem 1rem;
+}
+
+.faq-content h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: #33691e;
+}
+
+/* Itens do FAQ */
+.faq-item {
+  background: #ffffff;
+  border-left: 6px solid #66bb6a;
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition:  0.3s ease;
+}
+
+.faq-item:hover {
+  background: #f1f8e9;
+}
+
+.faq-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #2e7d32;
+}
+
+.faq-item p {
+  font-size: 1.2rem;
+  color: #455a64;
+}
+
+/* Rodapé */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .painel {
+    margin: 10px;
+    font-size: 0.95rem;
+  }
+
+  .topo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .painel {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .painel {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .painel {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .painel {
+    font-size: 1.2rem;
+  }
+}
