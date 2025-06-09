@@ -78,7 +78,7 @@ header {
 /* Backgroud nomeado para HERO */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
-              url(Background-EcoAlerta.jpeg) no-repeat center center/cover;
+              url(back.jpeg) no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 6rem 1rem;
