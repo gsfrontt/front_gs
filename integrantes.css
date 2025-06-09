@@ -1,0 +1,196 @@
+/* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0fdf4;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header e Navegação */
+header {
+  background: #1b5e20;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #81c784;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #81c784;
+  margin: 10px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
+
+.nav a.active,
+.nav a[href="integrantes.html"] {
+  background: #81c784;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Seção Integrantes */
+
+
+.integrantes-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.integrantes-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #1b5e20;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.integrante-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.integrante-card:hover {
+  transform: translateY(-8px);
+}
+
+.integrante-card img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.integrante-card h3 {
+  font-size: 1.6rem;
+  color: #1b5e20;
+  margin-bottom: 0.5rem;
+}
+
+.integrante-card p {
+  font-size: 1rem;
+  color: #388e3c;
+  margin-bottom: 1rem;
+}
+
+.integrante-card .links a {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 0.4rem 1rem;
+  background: #a5d6a7;
+  color: #1b5e20;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.integrante-card .links a:hover {
+  background: #81c784;
+}
+
+/* Footer */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .painel {
+    margin: 10px;
+    font-size: 0.95rem;
+  }
+
+  .topo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .painel {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .painel {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .painel {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .painel {
+    font-size: 1.2rem;
+  }
+}
