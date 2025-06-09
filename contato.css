@@ -1,0 +1,222 @@
+/* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0fdf4;
+  color: #2e7d32;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header e Navegação */
+header {
+  background: #1b5e20;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #81c784;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #81c784;
+  margin: 10px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.nav a:hover {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
+
+.nav a.active,
+.nav a[href="contato.html"] {
+  background: #81c784;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+.contato-content {
+  padding: 3rem 1rem;
+}
+
+.contato-content h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #4e664e;
+}
+
+/* Formulário */
+form {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #1b5e20;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 2px solid #c5e1a5;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 120px;
+}
+
+button[type="submit"] {
+  background: #66bb6a;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #558b2f;
+}
+
+/* Mensagens de erro */
+.erro {
+  color: red;
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  display: block;
+}
+
+/* WhatsApp */
+.whatsapp {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #128c7e;
+}
+
+/* Rodapé */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .painel {
+    margin: 10px;
+    font-size: 0.95rem;
+  }
+
+  .topo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .painel {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .painel {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .painel {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .painel {
+    font-size: 1.2rem;
+  }
+}
