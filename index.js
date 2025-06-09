@@ -10,3 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Rolagem suave para seção interna
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+}
